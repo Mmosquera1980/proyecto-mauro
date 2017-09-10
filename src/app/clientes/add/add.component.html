@@ -1,0 +1,47 @@
+<form #addForm="ngForm">
+  <table>
+    <tr>
+      <td>
+          <md-form-field>
+              <input required mdInput placeholder="Name" [(ngModel)]="cliente.name" name="name" #name="ngModel" >
+              <md-error>
+                Por favor entre un nombre valido
+              </md-error>
+            </md-form-field>
+        name
+      </td>
+    </tr>    
+     <tr> 
+      <td>
+          <md-form-field>
+              <input required mdInput placeholder="Address" [(ngModel)]="cliente.address" name="address" #address="ngModel" >
+              <md-error>
+                Por favor entre una dirección valida
+              </md-error>
+            </md-form-field>          
+        stratum
+      </td>
+    </tr> 
+      <td>
+          
+        address
+      </td>  
+    <tr>    
+      <td>
+          
+        gender
+      </td>                     
+    </tr>
+    <tr>    
+        <td>
+            <div class="button-row">
+                <button md-icon-button color="primary">Save</button>
+
+                <!--[disable]="!addForm.valid" -->
+            </div>
+          
+        </td>                     
+      </tr>
+  </table>
+  
+</form>
