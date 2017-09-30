@@ -1,3 +1,14 @@
-<p>
-  list works!
-</p>
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Estratum</td>
+    <td>Gender</td>
+  </tr>
+  <tr *ngFor="let cliente of clienteServiceService.clientesList">
+    <td>{{cliente.name}}</td>
+    <td>{{cliente.address}}</td>
+    <td>{{cliente.stratum}}</td>
+    <td>{{cliente.gender}}</td>
+  </tr>
+</table>

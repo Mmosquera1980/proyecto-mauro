@@ -3,41 +3,47 @@
     <tr>
       <td>
           <md-form-field>
-              <input required mdInput placeholder="Name" [(ngModel)]="cliente.name" name="name" #name="ngModel" >
+              <input required mdInput placeholder="Name" [(ngModel)]="cliente.name" name="Name" #Name="ngModel" >
               <md-error>
                 Por favor entre un nombre valido
               </md-error>
             </md-form-field>
-        name
       </td>
     </tr>    
-     <tr> 
+    <tr> 
       <td>
           <md-form-field>
-              <input required mdInput placeholder="Address" [(ngModel)]="cliente.address" name="address" #address="ngModel" >
+              <input required mdInput placeholder="Address" [(ngModel)]="cliente.address" name="Address" #Address="ngModel" >
               <md-error>
-                Por favor entre una dirección valida
+              Por favor entre una dirección valida
               </md-error>
             </md-form-field>          
-        stratum
-      </td>
+          </td>
     </tr> 
       <td>
-          
-        address
-      </td>  
+        <md-form-field>
+          <input required mdInput placeholder="Estratum" [(ngModel)]="cliente.stratum" name="Estratum" #Stratum="ngModel" >
+          <md-error>
+            Por favor entre un estrato valido
+          </md-error>
+        </md-form-field>   
+          </td>  
     <tr>    
       <td>
-          
-        gender
-      </td>                     
+        <md-form-field>
+          <input required mdInput placeholder="Gender" [(ngModel)]="cliente.gender" name="Gender" #Gender="ngModel" >
+          <md-error>
+            Por favor entre una gender valido
+          </md-error>
+        </md-form-field>     
+          </td>                     
     </tr>
     <tr>    
         <td>
             <div class="button-row">
-                <button md-icon-button color="primary">Save</button>
-
-                <!--[disable]="!addForm.valid" -->
+                <button md-icon-button color="primary" (click)= "onNewClick()">Nuevo</button>
+                <button md-icon-button color="primary" (click)= "onSaveClick()">Save</button>
+                <!--<button [disable]="!addForm.valid" md-icon-button color="primary" (click)= "onSaveClick()">Save</button>-->
             </div>
           
         </td>                     

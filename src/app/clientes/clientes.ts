@@ -1,6 +1,6 @@
 export class Clientes{
     name:string;
-    stratum:string;
+    stratum:number;
     address:string;
     gender:string;
 }

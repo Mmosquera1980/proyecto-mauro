@@ -39,6 +39,7 @@ import {
   MdToolbarModule,
   MdTooltipModule,
   } from '@angular/material';
+import { ClienteServiceService } from './cliente-service.service';
 
 @NgModule({
   imports: [
@@ -77,6 +78,7 @@ import {
     MdToolbarModule,
     MdTooltipModule,
   ],
-  declarations: [IndexComponent, AddComponent, ListComponent]
+  declarations: [IndexComponent, AddComponent, ListComponent],
+  providers: [ClienteServiceService]
 })
 export class ClientesModule { }
