@@ -20,8 +20,10 @@ export class AddComponent implements OnInit {
   }
 
   onNewClick(){
+    alert("Nuevo Ingreso");
     this.cliente=new Clientes();
   }
+
   onSaveClick(){
     alert("Se ha guardado " + this.cliente.name);
     this.clienteServiceService.clientesList.push(this.cliente);
